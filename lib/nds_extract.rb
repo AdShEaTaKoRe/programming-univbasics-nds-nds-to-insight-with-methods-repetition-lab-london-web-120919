@@ -29,6 +29,9 @@ def list_of_directors(source)
   # Write this implementation
   director_index = 0
   director_names = []
+  while director_index < source.length do
+    
+  end
   
   director_names
 end

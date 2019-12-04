@@ -27,7 +27,10 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  director_index = 0
+  director_names = []
   
+  director_names
 end
 
 def total_gross(source)
@@ -41,11 +44,16 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   
+  total_gross = 0
   dtotals = directors_totals(source)
   director_names = list_of_directors(source)
   counter = 0
   while counter < director_names.length do
-end
+    dname = director_names[counter]
+    total_gross += dtotals[dname]
+    counter += 1
+  end
+  total_gross
 end
 
 
